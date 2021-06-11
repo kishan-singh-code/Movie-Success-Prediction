@@ -363,6 +363,8 @@ def proguser4(request):
         Director_Name = request.POST.get('Director_Name')
         new_director = request.POST.get('new_director')
         new_actor = request.POST.get('new_actor')
+        insta_director = request.POST.get('insta_director')
+        insta_actor = request.POST.get('insta_actor')        
         Genre_Musical = request.POST.get('Genre_Musical')
         Genre_Romance = request.POST.get('Genre_Romance')
         Genre_Sport = request.POST.get('Genre_Sport')
@@ -396,6 +398,8 @@ def proguser4(request):
 
         new_actor = str(new_actor)
         new_director = str(new_director)
+        insta_actor = str(insta_actor)
+        insta_director = str(insta_director)
 
         Genre_Musical = str(Genre_Musical)
         Genre_Romance = str(Genre_Romance)
@@ -421,7 +425,7 @@ def proguser4(request):
         Genre_News = str(Genre_News)
         Genre_Action = str(Genre_Action)
 
-        out=run([sys.executable,BASE_DIR +'/static/program/social.py',str(Runtime),str(Aspect_Ratio), str(Content_Rating_Score), str(Genre_Musical), str(Genre_Romance), str(Genre_Sport), str(Genre_Crime), str(Genre_Documentary), str(Genre_Film_Noir), str(Genre_Short), str(Genre_Fantasy), str(Genre_Horror), str(Genre_Comedy), str(Genre_Western), str(Genre_Thriller), str(Genre_War), str(Genre_Animation), str(Genre_Family), str(Genre_Mystery), str(Genre_Adventure), str(Genre_Drama), str(Genre_History), str(Genre_Biography), str(Genre_Sci_Fi), str(Genre_News), str(Genre_Action), str(Release_Month), str(Director_Name), str(Lead_Actor_Name), str(Budget), str(new_actor), str(new_director)],shell=False,stdout=PIPE)
+        out=run([sys.executable,BASE_DIR +'/static/program/social.py',str(Runtime),str(Aspect_Ratio), str(Content_Rating_Score), str(Genre_Musical), str(Genre_Romance), str(Genre_Sport), str(Genre_Crime), str(Genre_Documentary), str(Genre_Film_Noir), str(Genre_Short), str(Genre_Fantasy), str(Genre_Horror), str(Genre_Comedy), str(Genre_Western), str(Genre_Thriller), str(Genre_War), str(Genre_Animation), str(Genre_Family), str(Genre_Mystery), str(Genre_Adventure), str(Genre_Drama), str(Genre_History), str(Genre_Biography), str(Genre_Sci_Fi), str(Genre_News), str(Genre_Action), str(Release_Month), str(Director_Name), str(Lead_Actor_Name), str(Budget), str(new_actor), str(new_director), str(insta_actor), str(insta_director)],shell=False,stdout=PIPE)
         arr=out.stdout.decode("utf-8")
         crr=arr[(len(arr))-3]
         crr=int(crr)

@@ -38,20 +38,19 @@ clf=RandomForestClassifier(n_estimators=24, random_state=42,n_jobs=-1)
 clf.fit(X_train,y_train)
 
 
-
+# actor ka mamla
 
 if((sys.argv[31])!='0'):
     if((sys.argv[31])=='1'):
-        avg_actor = 266
+        avg_actor1 = 266
     if((sys.argv[31])=='2'):
-        avg_actor = 316
+        avg_actor1 = 316
     if((sys.argv[31])=='3'):
-        avg_actor = 438
+        avg_actor1 = 438
     if((sys.argv[31])=='4'):
-        avg_actor = 488
+        avg_actor1 = 488
     if((sys.argv[31])=='5'):
-        avg_actor = 538
-
+        avg_actor1 = 538
 
 else:
     i=0
@@ -61,23 +60,70 @@ else:
     for x in a:
         i=i+1
         if(x==b):
-            avg_actor = int(c[i-1])
+            avg_actor1 = int(c[i-1])
             break  
 
-#print(avg_actor)2787
+# actor insta
+
+hola=sys.argv[33]
+bola=int(hola)
+
+if(bola!= 0):
+    if(bola<=100):
+        avg_actor2 = 266
+    elif(bola<=200):
+        avg_actor2 = 316
+    elif(bola<=500):
+        avg_actor2 = 438
+    elif(bola<=800):
+        avg_actor2 = 488
+    elif(bola<=1000):
+        avg_actor2 = 538
+
+else:
+    avg_actor2=avg_actor1
+    
+
+
+avg_actor = round((avg_actor1 + avg_actor2)/2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# director ka mamla
 
 
 if((sys.argv[32])!='0'):
     if((sys.argv[32])=='1'):
-        avg_direc = 314
+        avg_direc1 = 314
     if((sys.argv[32])=='2'):
-        avg_direc = 364
+        avg_direc1 = 364
     if((sys.argv[32])=='3'):
-        avg_direc = 414
+        avg_direc1 = 414
     if((sys.argv[32])=='4'):
-        avg_direc = 464
+        avg_direc1 = 464
     if((sys.argv[32])=='5'):
-        avg_direc = 514
+        avg_direc1 = 514
 
 else:
     ii=0
@@ -87,17 +133,55 @@ else:
     for xi in ai:
         ii=ii+1
         if(xi==bi):
-            avg_direc = int(ci[ii-1])
+            avg_direc1 = int(ci[ii-1])
             break
 
+# director insta
 
+holaa=sys.argv[34]
+bolaa=int(holaa)
+
+if(bolaa!= 0):
+    if(bolaa<=100):
+        avg_direc2 = 314
+    elif(bolaa<=200):
+        avg_direc2 = 364
+    elif(bolaa<=500):
+        avg_direc2 = 414
+    elif(bolaa<=800):
+        avg_direc2 = 464
+    elif(bolaa<=1000):
+        avg_direc2 = 514
+
+else:
+    avg_direc2=avg_direc1
+    
+
+
+avg_direc = round((avg_direc1 + avg_direc2)/2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#date ka mamla
 
 aaa=sys.argv[27]
 iii=int(aaa[5])
 jjj=int(aaa[6])
 iii=str(((iii*10)+jjj)-1)
 
-
+#Movie Genre ka mamla
 
 for l in range(4,27):
      if(sys.argv[l]=='None'):

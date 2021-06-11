@@ -4,6 +4,15 @@
 {% block head %}
 
 <link rel="stylesheet" href="/static/css/data_css.css">
+<link rel="stylesheet" href="/static/css/all.min.css">
+
+<style>
+.form-label{
+  font-size:16px;
+}
+</style>
+
+
 
 {% endblock head %}
 {% block title %}
@@ -31,7 +40,7 @@ contact
 {% csrf_token %}
 
 
-<div class="row">
+<div class="row pb-4">
   <div class="col">
     <div class="mb-3">
       <label for="Director_Name" class="form-label">Director Name</label>
@@ -49,10 +58,20 @@ contact
 
 
 
+  <div class="mb-3 pb-4">
+   <div class="range-wrap">
+    <label for="sepal_length customRange3" class="form-label" style="font-size: 20px;"><span style="font-size: 25px; color: #FF347C;"><i class="fab fa-instagram"></i></span>&nbsp;&nbsp;Director insta followers</label>
+    <input type="range" class="range" value="0"  min="0" max="1000" step="1" name="insta_director">
+    <output class="bubble"></output> 
+    </div>
+  </div>
 
 
 
-<div class="row">
+
+
+
+<div class="row pb-4">
   <div class="col">
     <div class="mb-3">
       <label for="Lead_Actor_Name" class="form-label">Lead Actor Name</label>
@@ -67,6 +86,16 @@ contact
     </div> 
   </div>
 </div>
+
+
+
+  <div class="mb-3 pb-4">
+   <div class="range-wrap">
+    <label for="sepal_length customRange3" class="form-label" style="font-size: 20px;"><span style="font-size: 25px; color: #FF347C;"><i class="fab fa-instagram"></i></span>&nbsp;&nbsp;Actor insta followers</label>
+    <input type="range" class="range" value="0"  min="0" max="1000" step="1" name="insta_actor">
+    <output class="bubble"></output> 
+    </div>
+  </div>
 
 
 
@@ -112,7 +141,7 @@ contact
 
  <div class="mb-3">
 <div class="form-group row">
-  <label for="example-date-input" class="col-5 col-form-label">Releas_Date</label>
+  <label for="example-date-input" class="col-5 col-form-label form-label">Releas Date</label>
   <div class="col-12">
     <input class="form-control" type="date" name="date" value="2011-08-19" id="example-date-input">
   </div>
@@ -121,7 +150,7 @@ contact
 
 
   <div class="mb-3">
-    <label for="sepal_length" class="form-label">Movie_Duration</label>
+    <label for="sepal_length" class="form-label">Movie Duration</label>
     <input type="number" step="any" class="form-control" id="Runtime" name="Runtime" placeholder="Enter Movie Duration in minutes">
   </div>
 
@@ -297,6 +326,7 @@ function setBubble(range, bubble) {
 }
 </script>
 
+<script src="/static/js/all.min.js"></script>
 
 {% endblock body %}
 
