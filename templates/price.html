@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+     
+        <link rel="stylesheet" href="/static/css/price_css.css">
+        <link rel="stylesheet" href="/static/css/all.min.css">
+    
+
+{% endblock head %}
+
+{% block title %}
+About
+{% endblock title %}
+{% block body %}
+
+
+<!-- Start pricing -->
+    <div class="container-lg py-5">
+        <div class="col-md-12 m-auto text-center py-5">
+            <h1 class="h2 text-primary typo-space-line " style="font-size: 50px;font-weight: 600;">Pricing</h1>
+            <p class="light-300" style="font-size: 19px;font-weight: 500;">
+                For now you can Access all Algorithm.
+            </p>
+        </div>
+
+
+        <div class="row px-lg-3">
+
+
+                {% comment %} <div class="banner-content col-lg-7 pt-5">
+                    <h1 class="h2 py-4 text-primary typo-space-line pt-5" style="font-size: 50px;font-weight: 600;">Why we choose this ?</h1>
+                    <p class="light-300" style="font-size: 19px;font-weight: 500;">
+                    The Film Industry across all the globe with hundreds of new movies made each year. If one can use a computer to predict how successful a movie will be even before it is released, this would be a powerful tool to use. An aspiring producer, director, or movie studio with some technical skills could predict whether their movie idea is going to be a safe investment. With the vast amount of data published on the Internet and the increasing power of the modern computer, is it possible to take advantage of these resources to make predictions And this is how we ended up making this project .  </p>
+                </div> {% endcomment %}
+
+
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card bg-light border-primary h-100 shadow-sm py-5">
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <span style="font-size: 50px; color: #0D6EFD;">
+                          <i class="fas fa-money-check-alt"></i>
+                        </span>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Free Plan</h2>
+                        <p>$0</p>
+                        <ul class="pricing-table-body text-start text-dark px-4 list-unstyled light-300">
+                          <span style="font-size: 20px; color: #0D6EFD;">
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;K N N</li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;S V M</s></li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;<s style="color: red;">Rain Forest</s></li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;<s style="color: red;">Social Media</s></li>
+                           </span> 
+                        </ul>
+                        <div class="pricing-table-footer pt-5">
+                            <a href="/select" class="btn rounded-pill px-4 btn-outline-primary light-300">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pt-sm-0 pt-3 px-xl-3">
+                <div class="pricing-table card bg-primary h-100 card-rounded shadow-sm border-0 py-5" >
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <span style="font-size: 50px; color: #ffffff;">
+                          <i class="fas fa-money-check-alt"></i>
+                        </span>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Free Plan</h2>
+                        <p>$0</p>
+                        <ul class="pricing-table-body text-start text-dark px-4 list-unstyled light-300">
+                          <span style="font-size: 20px; color: #ffffff;">
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;K N N</li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;S V M</li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;Rain Forest</li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;Social Media</li>
+                           </span> 
+                        </ul>
+                        <div class="pricing-table-footer pt-5 pb-2">
+                            <a href="/select" class="btn rounded-pill px-4 btn-outline-light light-300">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card bg-light border-primary h-100 shadow-sm py-5">
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <span style="font-size: 50px; color: #0D6EFD;">
+                          <i class="fas fa-money-check-alt"></i>
+                        </span>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Free Plan</h2>
+                        <p>$0</p>
+                        <ul class="pricing-table-body text-start text-dark px-4 list-unstyled light-300">
+                          <span style="font-size: 20px; color: #0D6EFD;">
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;K N N</li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;S V M</li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;Rain Forest</s></li>
+                            <li><i class="fas fa-dot-circle"></i>&nbsp;&nbsp;&nbsp;<s style="color: red;">Social Media</s></li>
+                           </span> 
+                        </ul>
+                        <div class="pricing-table-footer pt-5">
+                            <a href="/select" class="btn rounded-pill px-4 btn-outline-primary light-300">Get Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- End Content -->
+
+<script src="/static/js/all.min.js"></script>
+
+
+
+{% endblock body %}

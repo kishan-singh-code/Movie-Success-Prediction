@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/static/img/icons/icon.png" type="image/gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <style>
+    
+#main_nav .nav-item .nav-link:hover {color: #fff;}
+
+.range {
+  width: 100%;
+} 
+
+    </style>
+
+  {% block head %}{% endblock head %}
+
+
+
+
+    <title> {% block title %}{% endblock title %} | Hello Guys!!! </title>
+  </head>
+  <body>
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light bg-white shadow" >
+    <div class="container-fluid">
+        {% comment %} <div class="container d-flex justify-content-between align-items-center"> {% endcomment %}
+
+                <h2 class="text-primary" style="font-weight: 500;">Movie Success Prediction</h2>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler-success" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="navbar-toggler-success" >
+                <div class="flex-fill mb-2" style="margin-top:5px;">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/index" style="font-size: 19px;font-weight: 550;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/about" style="font-size: 19px;font-weight: 550;">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/work" style="font-size: 19px;font-weight: 550;">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/price" style="font-size: 19px;font-weight: 550;">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-primary rounded-pill px-3" href="/contact" style="font-size: 19px;font-weight: 550;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-primary" type="submit" style="margin-right:0.5rem;">Search</button>
+                      <a href="/logout" class="btn btn-primary">LogOut</a>
+                    </form>
+                    {% comment %} <form method="get" action="/logout">
+                      <button type="submit" class="btn btn-primary" >LogOut</button>
+                    </form> {% endcomment %}
+                  <!--  <button type="button" class="btn btn-primary" style="margin-right: -60px;">logout</button>  -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+{% if messages %}    
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible fade show my-0" role="alert">
+<strong>{{ message }}</strong>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %}
+{% endif %}
+
+{% block body %}
+{% endblock body %}
+
+
+    <script src="/static/js/bootstrap_jquery.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/popper.js"></script>
+  </body>
+</html>

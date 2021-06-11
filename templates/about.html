@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+<style>
+
+.progress {
+  height: 10px;
+}
+.team-member-img {
+  transition-duration: 0.15s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+
+</style>
+
+{% endblock head %}
+
+{% block title %}
+About
+{% endblock title %}
+{% block body %}
+
+
+    <!-- Header -->
+
+
+
+    <!-- Start Banner Hero -->
+    <section class="bg-light w-100">
+        <div class="container">
+            <div class="row d-flex align-items-center py-4">
+                <div class="col-lg-6 text-start">
+                    <h1 class="h2 py-4 text-primary typo-space-line" style="font-size: 50px;font-weight: 600;">About Us</h1>
+                    <p class="light-300" style="font-size: 19px;font-weight: 500;">
+Hi, i am Kishan ,
+In this project, which was collaboratively made and designed by both students and with the help teacher, The products we created for this project were a website based on data mining. we use Django framework, the mining is done by various machine learning algorithm.                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/static/img/about/banner-img-02.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Team Member -->
+    <section class="container py-5">
+        <div class="pt-4 pb-3 d-lg-flex align-items-center gx-5">
+
+            <div class="col-lg-7">
+                <h1 class="h2 py-4 text-primary typo-space-line" style="font-size: 50px;font-weight: 600;">Our Team</h1>
+<p class="light-300" style="font-size: 19px;font-weight: 500;">
+I Kishan Singh (Main Developer), with 2 of my friend, Akhilesh and
+Shivam under the guidance of our mentor Suruchi Kanaujiya mam as well as our Head of Department Dr Ravindra Nath sir.</p>
+            </div>
+             <div class="col-lg-1">
+            </div> 
+            <div class="col-lg-4 row">
+                <div class="team-member col-md-8">
+                    <img class="team-member-img img-fluid rounded-circle p-4" src="/static/img/about/hero-bg.jpg" alt="Card image">
+                   <h3 class="text-primary team-member-caption list-unstyled text-center pt-4 light-300" style="font-weight: 500;">Kishan Singh</h3>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Team Member -->
+
+
+
+    <!-- Start Progress -->
+    <section class="bg-white py-5">
+        <div class="container my-4">
+
+        
+
+            <div class="creative-content row py-3">
+                <div class="col-md-5">
+                <h1 class="h2 py-4 text-primary typo-space-line" style="font-size: 50px;font-weight: 600;">Languages used</h1>
+                    <p class="light-300" style="font-size: 19px;font-weight: 500;">
+                    I use Python3.0 with the Django framework and for frontend
+                    I used HTML, CSS, JavaScript and JQuery. I use various machine learning algorithm such as KNN, Random forest algorithm and
+                    SVM.  </p>
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="creative-progress col-md-6 py-5">
+
+                    <div class="row mt-4 mt-sm-2">
+                        <div class="col-6">
+                            <h4 class="h5">Python 3.0</h4>
+                        </div>
+                        <div class="col-6 text-right">75%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    
+                    <div class="row mt-4 mt-sm-2">
+                        <div class="col-6">
+                            <h4 class="h5">HTML</h4>
+                        </div>
+                        <div class="col-6 text-right">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+
+                    <div class="row mt-4 mt-sm-2">
+                        <div class="col-6">
+                            <h4 class="h5">CSS</h4>
+                        </div>
+                        <div class="col-6 text-right">64%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Progress -->
+
+    <!-- Start Choice -->
+    <section class=" banner-bg bg-light">
+        <div class="container my-4">
+            <div class="row">
+                <div class="banner-img col-lg-5">
+                    <img src="/static/img/about/work.svg" class="rounded img-fluid" alt="">
+                </div>
+                <div class="banner-content col-lg-7 pt-5">
+                    <h1 class="h2 py-4 text-primary typo-space-line pt-5" style="font-size: 50px;font-weight: 600;">Why we choose this ?</h1>
+                    <p class="light-300" style="font-size: 19px;font-weight: 500;">
+                    The Film Industry across all the globe with hundreds of new movies made each year. If one can use a computer to predict how successful a movie will be even before it is released, this would be a powerful tool to use. An aspiring producer, director, or movie studio with some technical skills could predict whether their movie idea is going to be a safe investment. With the vast amount of data published on the Internet and the increasing power of the modern computer, is it possible to take advantage of these resources to make predictions And this is how we ended up making this project .  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Choice -->
+
+   
+
+
+    <!-- Start Footer -->
+    <footer >
+       
+
+        <div class="w-100 bg-primary py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Designed by Kishan Singh
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+
+{% endblock body %}

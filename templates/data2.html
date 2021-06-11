@@ -1,0 +1,302 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+<link rel="stylesheet" href="/static/css/data_css.css">
+
+{% endblock head %}
+{% block title %}
+contact
+{% endblock title %}
+{% block body %}
+
+    <div style="background: url(/static/op1.jpg);" class="p-t-130 p-b-100">
+        <div class="wrapper wrapper--w680"> 
+            <div class="card card-4">
+                <div class="card-body">
+
+
+
+
+
+
+<div class="container mt-3">
+<h1 class="text-center" style="margin-bottom: 30px;">Enter Data</h1>
+</div>
+
+{% comment %} <div class="d-flex justify-content-center"> {% endcomment %}
+ {% comment %} <div class="col-4"> {% endcomment %}
+<form method="post"  action="/prog2">
+{% csrf_token %}
+
+
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <label for="Director_Name" class="form-label">Director Name</label>
+      <input type="text" step="any" class="form-control" id="Director_Name" name="Director_Name" placeholder="Enter Your Director Name">
+    </div>
+  </div>
+  <div class="col">
+    <div class="range-wrap">
+      <label for="customRange3" class="form-label">Bachelor's in film or Experience</label>
+      <input type="range" class="range" value="0"  min="0" max="5" step="1" name="new_director" style="margin-top: 5px;"> 
+      <output class="bubble"></output>
+    </div> 
+  </div>
+</div>
+
+
+
+
+
+
+<div class="row">
+  <div class="col">
+    <div class="mb-3">
+      <label for="Lead_Actor_Name" class="form-label">Lead Actor Name</label>
+      <input type="text" step="any" class="form-control" id="Lead_Actor_Name" name="Lead_Actor_Name" placeholder="Enter Your Lead Actor Name">
+    </div>
+  </div>
+  <div class="col">
+    <div class="range-wrap">
+      <label for="customRange3" class="form-label">Audition Round Rating</label>
+      <input type="range" class="range" value="0"  min="0" max="5" step="1" name="new_actor" style="margin-top: 5px;"> 
+      <output class="bubble"></output>
+    </div> 
+  </div>
+</div>
+
+
+
+
+
+
+
+  {% comment %} <div class="mb-3">
+    <label for="Lead_Actor_Name" class="form-label">Lead Actor Name</label>
+    <input type="text" step="any" class="form-control" id="Lead_Actor_Name" name="Lead_Actor_Name" placeholder="Enter Your Lead Actor Name">
+  </div> {% endcomment %}
+
+
+
+
+
+<div class="mb-3">
+<label for="Director_Name" class="form-label">Aspect Ratio</label>
+</div>
+<div class="mb-3">
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio"  name="inlineRadioOptions" id="inlineRadio1" value="1.78">
+  <label class="form-check-label" for="inlineRadio1">1.78</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio"  name="inlineRadioOptions" id="inlineRadio1" value="1.85">
+  <label class="form-check-label" for="inlineRadio1">1.85</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio"  name="inlineRadioOptions" id="inlineRadio1" value="2">
+  <label class="form-check-label" for="inlineRadio1">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio"  name="inlineRadioOptions" id="inlineRadio1" value="2.35">
+  <label class="form-check-label" for="inlineRadio1">2.35</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="2.4">
+  <label class="form-check-label" for="inlineRadio1">2.4</label>
+</div>
+</div>
+
+
+ <div class="mb-3">
+<div class="form-group row">
+  <label for="example-date-input" class="col-5 col-form-label">Releas_Date</label>
+  <div class="col-12">
+    <input class="form-control" type="date" name="date" value="2011-08-19" id="example-date-input">
+  </div>
+</div>
+</div>
+
+
+  <div class="mb-3">
+    <label for="sepal_length" class="form-label">Movie_Duration</label>
+    <input type="number" step="any" class="form-control" id="Runtime" name="Runtime" placeholder="Enter Movie Duration in minutes">
+  </div>
+
+  <div class="mb-3">
+    <label for="sepal_length" class="form-label">Movie Budget ( In million $)</label>
+    <input type="number" step="any" class="form-control" id="Budget" name="Budget" placeholder="Enter the budget of movie">
+  </div>
+
+
+<div class="mb-3">
+<label for="Director_Name" class="form-label">Content Type</label>
+</div>
+<div class="mb-3">
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name = "inlineRadioOptionss" id="inlineRadio1" value="0">
+  <label class="form-check-label" for="inlineRadio1">G</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name = "inlineRadioOptionss" id="inlineRadio1" value="1">
+  <label class="form-check-label" for="inlineRadio1">PG</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name = "inlineRadioOptionss" id="inlineRadio1" value="2">
+  <label class="form-check-label" for="inlineRadio1">PG-13</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name = "inlineRadioOptionss" id="inlineRadio1" value="3">
+  <label class="form-check-label" for="inlineRadio1">R</label>
+</div>
+</div>
+
+
+
+<div class="mb-3">
+<label for="Director_Name" class="form-label">Movie Genre</label>
+</div>
+
+<div class="mb-3">
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Musical" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Musical</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Romance" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Romance</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Sport" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Sport</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Crime" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Crime</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Documentary" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Documentary</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Film_Noir" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Film-Noir</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Short" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Short</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Fantasy" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Fantasy</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Horror" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Horror</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Western" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Western</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Thriller" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Thriller</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_War" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">War</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Animation" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Animation</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Family" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Family</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Mystery" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Mystery</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Adventure" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Adventure</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Drama" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Drama</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_History" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">History</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Biography" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Biography</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Sci_Fi" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Sci-Fi</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_News" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">News</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" name="Genre_Action" id="inlineCheckbox1" value="1">
+  <label class="form-check-label" for="inlineCheckbox1">Action</label>
+</div>
+</div>
+
+
+  
+  <div class="d-grid gap-2 col-4 mx-auto">
+  <button type="submit" class="btn btn-primary"  style="margin-top: 30px;" >Submit</button>
+  </div>
+
+  <br></br>
+
+
+
+
+</form>
+{% comment %} </div> {% endcomment %}
+{% comment %} </div> {% endcomment %}
+
+            </div> 
+        </div>
+    </div>
+
+
+
+
+<script>
+
+const allRanges = document.querySelectorAll(".range-wrap");
+allRanges.forEach(wrap => {
+  const range = wrap.querySelector(".range");
+  const bubble = wrap.querySelector(".bubble");
+
+  range.addEventListener("input", () => {
+    setBubble(range, bubble);
+  });
+  setBubble(range, bubble);
+});
+
+function setBubble(range, bubble) {
+  const val = range.value;
+  const min = range.min ? range.min : 0;
+  const max = range.max ? range.max : 100;
+  const newVal = Number(((val - min) * 100) / (max - min));
+  bubble.innerHTML = val;
+
+  // Sorta magic numbers based on size of the native UI thumb
+  bubble.style.left = `calc(${newVal}% + (${8 - newVal * 0.15}px))`;
+}
+</script>
+
+
+{% endblock body %}
+

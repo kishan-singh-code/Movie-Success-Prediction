@@ -1,0 +1,12 @@
+#work_banner {
+    background-image: url("/static/select_bagr.jpg");
+    background-repeat: no-repeat;
+    background-position: center center; background-size: cover;
+    height: 100%;
+    width: 100%;
+    
+    }
+    
+    .img-rounded{
+        border-radius: 20%;
+    }

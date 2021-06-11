@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+
+     
+        <link rel="stylesheet" href="/static/css/work_css.css">
+    
+
+{% endblock head %}
+
+{% block title %}
+About
+{% endblock title %}
+{% block body %}
+
+
+    <!-- Start Banner Hero -->
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5" style="height:550px;">
+        <div class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading h2 display-3 pb-1 semi-bold-600 typo-space-line-center">Our Work</h1>
+                <h3 class="h4 pb-2 regular-400">Scope</h3>
+                <p class="banner-body pb-4 light-300">
+The focus of this project is to formulate a method of how to preprocess the data set and evaluate which attributes are the most useful, by evaluating the correlation between the attributes and the success rate of the data mining techniques. Using this method we can achieve a viable success rate when trying to predict the rating and box office revenue. The data set is going to be obtained on IMDb, Kaggle, and The Movie DB. The data set will be limited to 10,000 unique movies because of making the workflow more manageable when processing the data. The algorithms that are going to be used are mainly, KNN, Random Forest, and Social media prediction.
+                </p>
+                <a class="btn rounded-pill btn-outline-light px-4 me-4 light-300" href="/about" role="button">Learn More</a>
+                <a class="btn rounded-pill text-light px-4 light-300 btn-primary" href="/contact" role="button">Contact Us</a>
+                {% comment %} <button type="submit" class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Learn More</button>
+                <button type="submit" class="btn rounded-pill text-light px-4 light-300 btn-primary">Contact Us</button> {% endcomment %}
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+
+{% endblock body %}
